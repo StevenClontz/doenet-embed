@@ -209,13 +209,18 @@ window.MathJax = {
 <link rel="modulepreload" crossorigin="crossorigin" href="./external/assets/ButtonGroup-b585a5ef.js">
 <link rel="modulepreload" crossorigin="crossorigin" href="./external/assets/ActivityViewer-b51a59ab.js">
 <script>function onLoad() {window.setDoenetML(`
-            <title>Sketch the derivative of <m>x^2</m></title>
+            <setup>
+    <select name="slope">-4 -2 2 4</select>
+    <select name="vertex_y">-4 -3 -2 -1 0 1 2 3 4</select>
+</setup>
 
-<graph aspectRatio="1" xmin="-4" xmax='4' ymin='-2' ymax='6' grid>
+<p>Sketch the derivative of <m>y=<math>$slope/2*x^2+$vertex_y</math></m></p>
 
-    <function name='f' variables='x'>x^2</function>
+<graph aspectRatio="1" xmin="-10" xmax='10' ymin='-10' ymax='10' grid>
 
-    <point name="p1" stylenumber="2" x="-1" y='2'>
+    <function name='f' variables='x'>$slope/2*x^2+$vertex_y</function>
+
+    <point name="p1" stylenumber="2" x="-1" y='3'>
         <constraints><attractToGrid /></constraints>
     </point>
 
@@ -223,7 +228,7 @@ window.MathJax = {
         <constraints><attractToGrid /></constraints>
     </point>
 
-    <point name="p3" stylenumber="2" x="1" y='4'>
+    <point name="p3" stylenumber="2" x="1" y='3'>
         <constraints><attractToGrid /></constraints>
     </point>
 
@@ -235,13 +240,13 @@ window.MathJax = {
 <answer>
     <award>
         <when>
-($p1.y-$p2.y)/($p1.x-$p2.x) = 2 and 
+($p1.y-$p2.y)/($p1.x-$p2.x) = $slope and 
 ($p1.y-$p2.y)/($p1.x-$p2.x)*$p1.x-$p1.y = 0 and
 
-($p1.y-$p3.y)/($p1.x-$p3.x) = 2 and 
+($p1.y-$p3.y)/($p1.x-$p3.x) = $slope and 
 ($p1.y-$p3.y)/($p1.x-$p3.x)*$p1.x-$p1.y = 0 and
 
-($p3.y-$p2.y)/($p3.x-$p2.x) = 2 and 
+($p3.y-$p2.y)/($p3.x-$p2.x) = $slope and 
 ($p3.y-$p2.y)/($p3.x-$p2.x)*$p2.x-$p2.y = 0
         </when>
     </award>
@@ -411,13 +416,18 @@ window.MathJax = {
         width: 18px;
       }
     </style>
-            &lt;title&gt;Sketch the derivative of &lt;m&gt;x^2&lt;/m&gt;&lt;/title&gt;
+            &lt;setup&gt;
+    &lt;select name="slope"&gt;-4 -2 2 4&lt;/select&gt;
+    &lt;select name="vertex_y"&gt;-4 -3 -2 -1 0 1 2 3 4&lt;/select&gt;
+&lt;/setup&gt;
 
-&lt;graph aspectRatio="1" xmin="-4" xmax='4' ymin='-2' ymax='6' grid&gt;
+&lt;p&gt;Sketch the derivative of &lt;m&gt;y=&lt;math&gt;$slope/2*x^2+$vertex_y&lt;/math&gt;&lt;/m&gt;&lt;/p&gt;
 
-    &lt;function name='f' variables='x'&gt;x^2&lt;/function&gt;
+&lt;graph aspectRatio="1" xmin="-10" xmax='10' ymin='-10' ymax='10' grid&gt;
 
-    &lt;point name="p1" stylenumber="2" x="-1" y='2'&gt;
+    &lt;function name='f' variables='x'&gt;$slope/2*x^2+$vertex_y&lt;/function&gt;
+
+    &lt;point name="p1" stylenumber="2" x="-1" y='3'&gt;
         &lt;constraints&gt;&lt;attractToGrid /&gt;&lt;/constraints&gt;
     &lt;/point&gt;
 
@@ -425,7 +435,7 @@ window.MathJax = {
         &lt;constraints&gt;&lt;attractToGrid /&gt;&lt;/constraints&gt;
     &lt;/point&gt;
 
-    &lt;point name="p3" stylenumber="2" x="1" y='4'&gt;
+    &lt;point name="p3" stylenumber="2" x="1" y='3'&gt;
         &lt;constraints&gt;&lt;attractToGrid /&gt;&lt;/constraints&gt;
     &lt;/point&gt;
 
@@ -437,13 +447,13 @@ window.MathJax = {
 &lt;answer&gt;
     &lt;award&gt;
         &lt;when&gt;
-($p1.y-$p2.y)/($p1.x-$p2.x) = 2 and 
+($p1.y-$p2.y)/($p1.x-$p2.x) = $slope and 
 ($p1.y-$p2.y)/($p1.x-$p2.x)*$p1.x-$p1.y = 0 and
 
-($p1.y-$p3.y)/($p1.x-$p3.x) = 2 and 
+($p1.y-$p3.y)/($p1.x-$p3.x) = $slope and 
 ($p1.y-$p3.y)/($p1.x-$p3.x)*$p1.x-$p1.y = 0 and
 
-($p3.y-$p2.y)/($p3.x-$p2.x) = 2 and 
+($p3.y-$p2.y)/($p3.x-$p2.x) = $slope and 
 ($p3.y-$p2.y)/($p3.x-$p2.x)*$p2.x-$p2.y = 0
         &lt;/when&gt;
     &lt;/award&gt;
