@@ -10,22 +10,40 @@ var ptx_lunr_docs = [
   "body": "   example.org   https:\/\/example.org   copyright  "
 },
 {
-  "id": "section-title",
+  "id": "section-doenet-iframe",
   "level": "1",
-  "url": "section-title.html",
+  "url": "section-doenet-iframe.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Section title",
-  "body": " Section title  Hello   Doenet: Sketching derivatives    "
+  "title": "Hosted Doenet iframe",
+  "body": " Hosted Doenet iframe   Doenet: Sketching derivatives    "
 },
 {
-  "id": "figure-doenet",
+  "id": "figure-doenet-iframe",
   "level": "2",
-  "url": "section-title.html#figure-doenet",
+  "url": "section-doenet-iframe.html#figure-doenet-iframe",
   "type": "Figure",
   "number": "1.1.1",
   "title": "",
   "body": " Doenet: Sketching derivatives   "
+},
+{
+  "id": "section-doenet-interactive",
+  "level": "1",
+  "url": "section-doenet-interactive.html",
+  "type": "Section",
+  "number": "1.2",
+  "title": "DoenetML in PreTeXt source",
+  "body": " DoenetML in PreTeXt source   Doenet: an empty graph    "
+},
+{
+  "id": "figure-doenet-interactive",
+  "level": "2",
+  "url": "section-doenet-interactive.html#figure-doenet-interactive",
+  "type": "Figure",
+  "number": "1.2.1",
+  "title": "",
+  "body": " Doenet: an empty graph   "
 },
 {
   "id": "colophon-2",
