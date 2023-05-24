@@ -194,10 +194,11 @@
     <div id="root"></div>
     <script>
       function post() {
-        alert('foo')
-        window.postMessage({doenetML:"<graph/>"},"*")
+        let dml = decodeURIComponent(window.location.hash.slice(1))
+        // alert(dml)
+        window.postMessage({doenetML:dml},"*")
       }
-      window.setTimeout(post,1000)
+      window.setTimeout(post,5000)
     </script>
   </body>
 </html>

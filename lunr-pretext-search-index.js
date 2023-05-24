@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Hosted Doenet iframe",
-  "body": " Hosted Doenet iframe   Doenet: Sketching derivatives    "
+  "body": " Hosted Doenet iframe   Hosted doenet embedded as an iframe    "
 },
 {
   "id": "figure-doenet-iframe",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.1.1",
   "title": "",
-  "body": " Doenet: Sketching derivatives   "
+  "body": " Hosted doenet embedded as an iframe   "
 },
 {
   "id": "section-doenet-interactive",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "DoenetML in PreTeXt source",
-  "body": " DoenetML in PreTeXt source   Doenet: an empty graph    "
+  "body": " DoenetML in PreTeXt source   DoenetML rendered from source    "
 },
 {
   "id": "figure-doenet-interactive",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.2.1",
   "title": "",
-  "body": " Doenet: an empty graph   "
+  "body": " DoenetML rendered from source   "
 },
 {
   "id": "colophon-2",
