@@ -189,17 +189,15 @@
     <link rel="modulepreload" crossorigin href="./assets/ActionButton-1e9c5f7a.js">
     <link rel="modulepreload" crossorigin href="./assets/ButtonGroup-b585a5ef.js">
     <link rel="modulepreload" crossorigin href="./assets/ActivityViewer-b51a59ab.js">
-  </head>
-  <body>
-    <div id="root"></div>
     <script>
-      function post() {
-        let dml = decodeURIComponent(window.location.hash.slice(1))
-        // alert(dml)
-        window.postMessage({doenetML:dml},"*")
-      }
-      window.setTimeout(post,5000)
+        function onLoad() {
+                    window.setDoenetML("<graph />");
+        }
     </script>
+  </head>
+  <body onload="onLoad()">
+    <div id="root"></div>
+    
   </body>
 </html>
 
